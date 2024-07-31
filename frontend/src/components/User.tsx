@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { BACKEND_URL } from "../config";
 
 export const User = () => {
-    const [userData, setUserData] = useState();
+    const [userData, setUserData] = useState<any>();
 
     useEffect(() => {
         axios.get(`${BACKEND_URL}/user`, {
